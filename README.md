@@ -13,7 +13,7 @@ TODO
 Most of the assets of the website are compressed with Gzip. 
 To reduce the size even further, Brotli compression can be used.
 I took the HTML, CSS and JavaScript files of the website, 
-added Brotli compression and compared them with the Gzipped version.
+added Brotli compression and compared them with the Gzipped version of the website.
 
 ##### Results
 
