@@ -1,8 +1,7 @@
 # Optimizing volkswagen.nl
 
 ## Summary
-Research of Volkswagen's website to improve the accesibility and performance. 
-This readme contains my research on the website and advice on how to improve it.
+This readme contains my research on Volkswagen's website and advice on how to improve the accesibility and performance of the website.
 
 ### Table of contents
 TODO
