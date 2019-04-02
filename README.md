@@ -24,7 +24,7 @@ added Brotli compression and compared them with the Gzipped version of the websi
 #### 2. Minifying and compressing SVG files
 
 The SVG files of the website aren't minified or compressed. 
-Minifying them and adding Gzip and/or Brotli can be used to further reduce the sizes of SVG's files.
+Minifying them and adding Gzip and/or Brotli compression can be used to further reduce the sizes of the SVG files.
 
 ##### Results
 
