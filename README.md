@@ -8,12 +8,12 @@ TODO
 
 ### Optimizations
 
-#### 1. Adding brotli compression
+#### 1. Adding Brotli compression
 
-Most of the assets of the website are compressed with gzip. 
+Most of the assets of the website are compressed with Gzip. 
 To reduce the size even further, Brotli compression can be used.
 I took the HTML, CSS and JavaScript files of the website, 
-added brotli compression and compared them with the gzipped files of the website.
+added Brotli compression and compared them with the gzipped files of the website.
 
 ##### Results
 
