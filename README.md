@@ -19,5 +19,5 @@ added brotli compression and compared the files with the gzipped version of the 
 ##### Results
 
 <p align="center">
-  <img src="https://github.com/Arash217/performance-matters-1819/blob/master/docs/images/1.png">
+  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/1.png">
 </p>
