@@ -18,4 +18,4 @@ added brotli compression and compared the files with the gzipped version of the 
 
 ##### Results
 
-![brotli-compression](../master/docs/images/1.jpg)
+![brotli-compression](../master/docs/images/1.png)
