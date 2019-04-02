@@ -2,7 +2,7 @@
 
 ## Summary
 Research of Volkswagen's website to improve the accesibility and performance. 
-This readme contains the research of the website and advice on how to improve it.
+This readme contains my research on the website and advice on how to improve it.
 
 ### Table of contents
 TODO
@@ -18,4 +18,6 @@ added brotli compression and compared the files with the gzipped version of the 
 
 ##### Results
 
-![brotli-compression](../master/docs/images/1.png)
+<p align="center">
+  <img src="https://github.com/Arash217/performance-matters-1819/blob/master/docs/images/1.png">
+</p>
