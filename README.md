@@ -21,12 +21,10 @@ added Brotli compression and compared them with the Gzipped version of the websi
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/1.png">
 </p>
 
-#### 2. Minifying and compressing SVG's
+#### 2. Minifying and compressing SVG files
 
-Most of the assets of the website are compressed with Gzip. 
-To reduce the size even further, Brotli compression can be used.
-I took the HTML, CSS and JavaScript files of the website, 
-added Brotli compression and compared them with the Gzipped version of the website.
+The SVG files of the website aren't minified or compressed. 
+Minifying them and adding Gzip and/or Brotli can be used to further reduce the sizes of SVG's files.
 
 ##### Results
 
