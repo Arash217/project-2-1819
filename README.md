@@ -31,3 +31,14 @@ Minifying them and adding Gzip and/or Brotli compression can be used to further 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/2.png">
 </p>
+
+#### 3.WebP images
+
+The images on the website are mostly jpg, with the exception of some png, gif and svg.
+Converting these images to WebP can reduce the size of the images even further.
+
+##### Results
+
+<p align="center">
+  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/3.png">
+</p>
