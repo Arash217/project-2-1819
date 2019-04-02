@@ -1,36 +1,33 @@
-# Project 2 @cmda-minor-web · 2018-2019
+# Optimizing volkswagen.nl
 
-## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
+## Summary
+This readme contains my research on Volkswagen's website and advice on how to improve the accesibility and performance of the website.
 
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (Valtech, Mirabeau & CMD Amsterdam). De aanbevelingen betreffen het verbeteren van toegankelijkheid en performance van de web sites / applicaties. Technieken geleerd bij [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
+### Table of contents
+TODO
 
-## Programma
-Maandag - 9.30 - kickoff
-Woensdag - voortgangbespreking
-Vrijdag presentatie
+### Optimizations
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan optimaliseren van toegankelijkheid en performance van een website. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) begrijpt en beheerst.
+#### 1. Adding Brotli compression
 
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+Most of the assets of the website are compressed with Gzip. 
+To reduce the size even further, Brotli compression can be used.
+I took the HTML, CSS and JavaScript files of the website, 
+added Brotli compression and compared them with the Gzipped version of the website.
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten kijken naar je code en beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. De opdrachtgver is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+##### Results
 
-Het project telt als AVV mee met de Meesterproef.
+<p align="center">
+  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/1.png">
+</p>
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+#### 2. Minifying and compressing SVG files
 
-### Browser Technologies
-In het vak [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819)) heb je geleerd wat de core functionalitiet van een web toepassing is en hoe je deze functionaliteit met progressive enhancement kan opbouwen tot een robuste web teopassing. Ook heb je geleerd hoe hiermee de toegankelijkheid van een web toepassing kan worden verbeterd. 
+The SVG files of the website aren't minified or compressed. 
+Minifying them and adding Gzip and/or Brotli compression can be used to further reduce the sizes of the SVG files.
 
-### Performance Matters
-In het vak [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) heb je geleerd hoe je een web toepassing (ogenschijnlijk) sneller kan maken en ook offline kan laten werken. Hiermee verbeter je de gebruikservaring van de web toepassing in alle omstandigheden.  
+##### Results
 
-
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de opdrachtgever. 
-- Github met je code en readme.
-
+<p align="center">
+  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/2.png">
+</p>
