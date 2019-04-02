@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "minify:svg": "svgo -f 2-minify-and-compress-svg/original -o 2-minify-and-compress-svg/optimized",
-    "compress:svg": "bread-compressor --brotli-quality=11 2-minify-and-compress-svg/optimized",
-    "compress:images": "sharp ",
-    "optimize:svg": "run-s minify:svg compress:svg"
+    "1:compress": "bread-compressor --brotli-quality=11 public/1-compress-html-css-js-with-brotli/optimized",
+    "2:minify:svg": "svgo -f public/2-minify-and-compress-svg/original -o public/2-minify-and-compress-svg/optimized",
+    "2:compress:svg": "bread-compressor --brotli-quality=11 public/2-minify-and-compress-svg/optimized",
+    "3:convert": "webpc -r public/3-webp/optimized",
+    "optimize:1": "run-s 1:compress",
+    "optimize:2": "run-s 2:minify:svg 2:compress:svg",
+    "optimize:3": "run-s 3:convert"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +18,14 @@
   "devDependencies": {
     "bread-compressor-cli": "^1.0.5",
     "npm-run-all": "^4.1.5",
-    "sharp-cli": "^1.9.0",
-    "svgo": "^1.2.0"
+    "svgo": "^1.2.0",
+    "webp-converter-cli": "0.0.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "koa": "^2.7.0",
+    "koa-compose": "^4.1.0",
+    "koa-compress": "^3.0.0",
+    "koa-static": "^5.0.0"
+  }
 }
