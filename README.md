@@ -35,7 +35,7 @@ Minifying them and adding Gzip and/or Brotli compression can be used to further 
 #### 3.WebP images
 
 The images on the website are mostly jpg, with the exception of some png, gif and svg.
-Converting these images to WebP can reduce the size of the images even further.
+Converting these images to WebP can reduce the size significantly.
 
 ##### Results
 
