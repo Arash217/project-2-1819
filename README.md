@@ -62,6 +62,8 @@ However, because of this loading, the text will be invisible until the custom fo
 
 #### Fix
 
+Fixed the issue by adding font-display: swap; to all @font-face rules.
+
 ```
 @font-face {
     font-family: VWHeadWeb;
@@ -71,6 +73,5 @@ However, because of this loading, the text will be invisible until the custom fo
     font-style: normal;
     font-display: swap;
 }
-
 ...
 ```
