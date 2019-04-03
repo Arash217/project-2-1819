@@ -62,7 +62,7 @@ However, because of this loading, the text will be invisible until the custom fo
 
 #### Fix
 
-Fixed the issue by adding font-display: swap; to all @font-face rules.
+This issue can be solved by adding 'font-display: swap;' to all '@font-face' rules.
 
 ```diff
 @font-face {
