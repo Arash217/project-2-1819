@@ -75,3 +75,11 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
 </p>
+
+#### Reflow
+
+While 'font-display: swap;' works, 
+it may cause reflow, because of the different font sizes between the fallback font family and the custom font family.
+
+This issue can be solved by making sure that the font sizes matches. 
+[Font style matcher](https://meowni.ca/font-style-matcher/) for example, can be used for this.
