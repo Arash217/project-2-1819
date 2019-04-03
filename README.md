@@ -80,5 +80,5 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 
 While 'font-display: swap;' works, 
 it may cause reflow, because of the different font sizes between the fallback font family and the custom font family.
-This issue can be solved by making sure that the font sizes matches. 
+This issue can be solved by making sure that the font sizes match. 
 [Font style matcher](https://meowni.ca/font-style-matcher/) for example, can be used for this.
