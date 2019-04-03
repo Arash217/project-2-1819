@@ -71,7 +71,7 @@ Fixed the issue by adding font-display: swap; to all @font-face rules.
          url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
-  + font-display: swap;
+    font-display: swap;
 }
 ...
 ```
