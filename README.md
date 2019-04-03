@@ -49,6 +49,7 @@ The website uses a custom font which is applied when it's loaded.
 However, because of this loading, the text will be invisible until the custom font is loaded, causing Flash of Invisible Text (FOIT).
 
 #### Original
+
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.gif">
 </p>
