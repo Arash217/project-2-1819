@@ -32,7 +32,7 @@ Minifying them and adding Gzip and/or Brotli compression can be used to further 
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/2.png">
 </p>
 
-#### 3.WebP images
+#### 3. WebP images
 
 The images on the website are mostly jpg, with the exception of some png, gif and svg.
 Converting these images to WebP can reduce the size significantly.
@@ -43,7 +43,7 @@ Converting these images to WebP can reduce the size significantly.
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/3.png">
 </p>
 
-#### 4.FOIT
+#### 4. FOIT
 
 The website uses a custom font which is applied when it's loaded.
 However, because of this loading, the text will be invisible until the custom font is loaded, causing Flash of Invisible Text (FOIT).
