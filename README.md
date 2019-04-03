@@ -54,12 +54,6 @@ However, because of this loading, the text will be invisible until the custom fo
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.gif">
 </p>
 
-##### Result
-
-<p align="center">
-  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
-</p>
-
 #### Fix
 
 This issue can be solved by adding 'font-display: swap;' to all '@font-face' rules.
@@ -75,3 +69,9 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 }
 ...
 ```
+
+##### Result
+
+<p align="center">
+  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
+</p>
