@@ -64,7 +64,7 @@ However, because of this loading, the text will be invisible until the custom fo
 
 Fixed the issue by adding font-display: swap; to all @font-face rules.
 
-```
+```diff
 @font-face {
     font-family: VWHeadWeb;
     src: url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff2) format("woff2"), 
