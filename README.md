@@ -65,7 +65,8 @@ However, because of this loading, the text will be invisible until the custom fo
 ```
 @font-face {
     font-family: VWHeadWeb;
-    src: url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff2) format("woff2"), url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff) format("woff");
+    src: url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff2) format("woff2"), 
+         url(../../../Fonts/VW-PKW/VWHeadWeb-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
