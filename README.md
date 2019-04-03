@@ -50,11 +50,15 @@ However, because of this loading, the text will be invisible until the custom fo
 
 #### Original
 <p align="center">
-  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.webm">
+  <video>
+    <source src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.webm" type="video/webm">
+  </video>
 </p>
 
 ##### Result
 
 <p align="center">
-  <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.webm">
+  <video>
+    <source src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.webm" type="video/webm">
+  </video>
 </p>
