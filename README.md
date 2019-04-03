@@ -42,3 +42,23 @@ Converting these images to WebP can reduce the size significantly.
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/3.png">
 </p>
+
+#### 4.FOIT
+
+The website uses a custom font which is applied when it's loaded.
+However, because of this loading, the text will be invisible until the custom font is loaded, causing Flash of Invisible Text (FOIT).
+
+#### Original
+<p align="center">
+  <video>
+    <source src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.webm" type="video/webm">
+  </video>
+</p>
+
+##### Result
+
+<p align="center">
+  <video>
+    <source src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.webm" type="video/webm">
+  </video>
+</p>
