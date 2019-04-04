@@ -48,13 +48,13 @@ Converting these images to WebP can reduce the size significantly.
 The website uses a custom font which is applied when it's loaded.
 However, because of this loading, the text will be invisible until the custom font is loaded, causing Flash of Invisible Text (FOIT).
 
-#### Original
+##### Original
 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.gif">
 </p>
 
-#### Fix
+##### Fix
 
 This issue can be solved by adding 'font-display: swap;' to all '@font-face' rules.
 
@@ -76,12 +76,20 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
 </p>
 
-#### Reflow
+##### Reflow
 
 While 'font-display: swap;' works, 
 it might cause reflow, since the fallback font family and the custom font family have different font sizes.
 This issue can be solved by making sure that the font sizes match. 
 [Font style matcher](https://meowni.ca/font-style-matcher/) for example, can be used for this.
+
+#### 5. Service Worker
+
+TODO
+
+##### Results
+
+TODO
 
 ## Licence
 MIT © [Arash Paknezad](https://github.com/Arash217)
