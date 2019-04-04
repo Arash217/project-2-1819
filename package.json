@@ -2,7 +2,7 @@
   "name": "project-2-1819",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "1:compress": "bread-compressor --brotli-quality=11 public/1-compress-html-css-js-with-brotli/optimized",
     "2:minify:svg": "svgo -f public/2-minify-and-compress-svg/original -o public/2-minify-and-compress-svg/optimized",
@@ -10,7 +10,9 @@
     "3:convert": "webpc -r public/3-webp/optimized/",
     "optimize:1": "run-s 1:compress",
     "optimize:2": "run-s 2:minify:svg 2:compress:svg",
-    "optimize:3": "run-s 3:convert"
+    "optimize:3": "run-s 3:convert",
+    "generate:sw": "sw-precache --config=./sw-precache-config.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +25,6 @@
     "webp-converter-cli": "0.0.5"
   },
   "dependencies": {
-    "dotenv": "^7.0.0",
     "koa": "^2.7.0",
     "koa-compose": "^4.1.0",
     "koa-compress": "^3.0.0",
