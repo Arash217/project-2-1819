@@ -1,8 +1,8 @@
 module.exports = {
-    runtimeCaching: [{
-        urlPattern: /countries\/.+/,
-        handler: 'cacheFirst'
-    }],
-    swFile: 'public/service-worker.js',
+    staticFileGlobs: [
+        'public/volkswagen/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2,json}'
+    ],
+    stripPrefix: 'public/volkswagen',
+    swFile: 'public/volkswagen/sw.js',
     verbose: true
 };

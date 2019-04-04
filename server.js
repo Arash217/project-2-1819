@@ -9,7 +9,7 @@ const middlewares = require('./middlewares');
 const app = new Koa();
 
 /* Serve assets from folder */
-app.use(serve(path.join(__dirname, '/public'), {
+app.use(serve(path.join(__dirname, '/public/volkswagen'), {
     setHeaders(res) {
         res.setHeader('cache-control', 'public, max-age=31536000');
     }

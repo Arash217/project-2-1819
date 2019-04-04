@@ -41,16 +41,10 @@ progress {
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
-    color: #41494c;
 }
 
 a:active, a:hover {
     outline-width: 0;
-    color: #41494c;
-}
-
-a, a:link, a:visited, a:focus, a:hover, a:active {
-    color: #41494c;
 }
 
 abbr[title] {
