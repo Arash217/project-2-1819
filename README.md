@@ -129,7 +129,7 @@ Using a service worker along browser/HTTP cache will give you more control over 
 
 Note: I used as a proof of concept, the tool sw-precache to generate a service worker which caches the assets of the website.
 However, this tool is deprecated and shouldn't be used in production. 
-Use [Workbox](https://developers.google.com/web/tools/workbox) instead if you want tooling to generate a service worker for production.
+Use [Workbox](https://developers.google.com/web/tools/workbox) instead if you want/need to use tooling to generate service workers for production.
 
 ## Sources
 - [Font style matcher](https://meowni.ca/font-style-matcher/)
