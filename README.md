@@ -112,8 +112,8 @@ This issue can be solved by making sure that the font sizes match.
 
 Initially, my idea was to cache third party scripts in the website with a service worker, 
 but it didn't work out because the scripts have dynamic urls.
-However, a service worker can still be used to cache the files that are cached by the browser itself (also known as HTTP cache).
-
+However, a service worker can still be used to cache the files that are cached by the browser itself (HTTP cache).
+Using a service worker along browser/http cache will give you more control over the cache, since you can use the power of a programming language. 
 
 ##### Results
 
