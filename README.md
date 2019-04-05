@@ -2,6 +2,7 @@
 
 ## Summary
 This readme contains my research on Volkswagen's website and advice on how to improve the accesibility and performance of the website.
+![Overview](../master/docs/images/homepage.png)
 
 ## 1. Installation
 
