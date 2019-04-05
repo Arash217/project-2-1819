@@ -79,6 +79,19 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 ...
 ```
 
+This, however caused the anchor tags to be unstyled until the CSS file was loaded.
+I solved this issue by adding an inline style:
+
+```diff
+<style>
+a {
+  color: #41494c;
+}
+</style>
+```
+
+It also could have been in a separate CSS file but I didn't test this.
+
 ##### Result
 
 <p align="center">
