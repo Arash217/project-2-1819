@@ -35,6 +35,9 @@ Minifying them and adding Gzip and/or Brotli compression can be used to further 
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/2.png">
 </p>
 
+Note: I only took the SVG files on the homepage to minify and compress.
+I didn't test the SVG files on the other pages.
+
 #### 3. WebP images
 
 The images on the website are mostly jpg, with the exception of some png, gif and svg.
@@ -45,6 +48,9 @@ Converting these images to WebP can reduce the size significantly.
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/3.png">
 </p>
+
+Note: I only took the JPG and PNG images on the homepage to convert to WebP.
+I didn't test the images on the other pages.
 
 #### 4. FOIT
 
