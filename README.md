@@ -80,7 +80,7 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 ```
 
 This, however caused the anchor tags to be unstyled until the CSS file was loaded.
-I solved this issue by adding an inline style:
+I solved this issue by adding a style sheet directly in the html:
 
 ```diff
 <style>
@@ -90,13 +90,16 @@ a {
 </style>
 ```
 
-It also could have been in a separate CSS file but I didn't test this.
+It also could have been in a separate CSS file, but I didn't test this.
 
 ##### Result
 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
 </p>
+
+Note: the dropdown menu (Meer) in the navigation is shown when the JavaScript file is loaded.
+This issue can for example be solved by adding the JavaScript responsible for the menu directly in the HTML file as a script tag.
 
 ##### Reflow
 
@@ -107,11 +110,18 @@ This issue can be solved by making sure that the font sizes match.
 
 #### 5. Service Worker
 
-TODO
+Initially, my idea was to cache third party scripts in the website with a service worker, 
+but it didn't work out because the scripts have dynamic urls.
+However, a service worker can still be used to cache the files that are cached by the browser itself.
+
 
 ##### Results
 
 TODO
+
+## Sources
+- [Font style matcher](https://meowni.ca/font-style-matcher/)
+- [Service workers & the Cache Storage API](https://web.dev/reliable/service-workers-cache-storage)
 
 ## Licence
 MIT © [Arash Paknezad](https://github.com/Arash217)
