@@ -3,8 +3,22 @@
 ## Summary
 This readme contains my research on Volkswagen's website and advice on how to improve the accesibility and performance of the website.
 
-### Table of contents
-TODO
+## 1. Installation
+
+Fork and/or clone it
+```bash
+git clone https://github.com/Arash217/project-2-1819
+```
+
+Install dependencies
+```bash
+npm install
+```
+
+Run the server (will use port 3000)
+```bash
+npm start
+```
 
 ### Optimizations
 
