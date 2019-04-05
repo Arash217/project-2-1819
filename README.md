@@ -128,7 +128,7 @@ Using a service worker along browser/HTTP cache will give you more control over 
 </p>
 
 Note: I used as a proof of concept, the tool sw-precache to generate a service worker which caches the assets of the website.
-The config file (sw-precache-config.js) can be found in the root directory of the project.
+The config file (sw-precache-config.js) for the service worker can be found in the root directory of the project.
 However, this tool is deprecated and shouldn't be used in production. 
 Use [Workbox](https://developers.google.com/web/tools/workbox) instead if you want/need to use tooling to generate service workers for production.
 
