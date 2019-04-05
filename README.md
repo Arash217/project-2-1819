@@ -22,7 +22,7 @@ added Brotli compression and compared them with the Gzipped version of the websi
 </p>
 
 Note: I only took three files, to show the difference between Gzip and Brotli compression. 
-The website still has other files to compress with Brotli.
+The website still has other files that can be compressed with Brotli.
 
 #### 2. Minifying and compressing SVG files
 
