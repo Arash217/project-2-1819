@@ -13,13 +13,16 @@ TODO
 Most of the assets of the website are compressed with Gzip. 
 To reduce the size even further, Brotli compression can be used.
 I took the HTML, CSS and JavaScript files of the website, 
-added Brotli compression and compared them with the Gzipped version of the website.
+added Brotli compression and compared them with the Gzipped version of the website. 
 
 ##### Results
 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/1.png">
 </p>
+
+Note: I only took three files, to show the difference between Gzip and Brotli compression. 
+The website still has other files that can be compressed with Brotli.
 
 #### 2. Minifying and compressing SVG files
 
@@ -32,6 +35,9 @@ Minifying them and adding Gzip and/or Brotli compression can be used to further 
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/2.png">
 </p>
 
+Note: I only took the SVG files on the homepage to minify and compress.
+I didn't test the SVG files on the other pages.
+
 #### 3. WebP images
 
 The images on the website are mostly jpg, with the exception of some png, gif and svg.
@@ -43,18 +49,21 @@ Converting these images to WebP can reduce the size significantly.
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/3.png">
 </p>
 
+Note: I only took the JPG and PNG images on the homepage to convert to WebP.
+I didn't test the images on the other pages.
+
 #### 4. FOIT
 
 The website uses a custom font which is applied when it's loaded.
 However, because of this loading, the text will be invisible until the custom font is loaded, causing Flash of Invisible Text (FOIT).
 
-#### Original
+##### Original
 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit.gif">
 </p>
 
-#### Fix
+##### Fix
 
 This issue can be solved by adding 'font-display: swap;' to all '@font-face' rules.
 
@@ -70,15 +79,49 @@ This issue can be solved by adding 'font-display: swap;' to all '@font-face' rul
 ...
 ```
 
+This, however caused the anchor tags to be unstyled until the CSS file was loaded.
+I solved this issue by adding a style sheet directly in the html:
+
+```diff
+<style>
+a {
+  color: #41494c;
+}
+</style>
+```
+
+It also could have been in a separate CSS file, but I didn't test this.
+
 ##### Result
 
 <p align="center">
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/foit-fix.gif">
 </p>
 
-#### Reflow
+Note: the dropdown menu (Meer) in the navigation is shown when the JavaScript file is loaded.
+This issue can for example be solved by adding the JavaScript responsible for the menu directly in the HTML file as a script tag.
+
+##### Reflow
 
 While 'font-display: swap;' works, 
 it might cause reflow, since the fallback font family and the custom font family have different font sizes.
 This issue can be solved by making sure that the font sizes match. 
 [Font style matcher](https://meowni.ca/font-style-matcher/) for example, can be used for this.
+
+#### 5. Service Worker
+
+Initially, my idea was to cache third party scripts in the website with a service worker, 
+but it didn't work out because the scripts have dynamic urls.
+However, a service worker can still be used to cache the files that are cached by the browser itself (HTTP cache).
+Using a service worker along browser/http cache will give you more control over the cache, since you can use the power of a programming language. 
+
+##### Results
+
+TODO
+
+## Sources
+- [Font style matcher](https://meowni.ca/font-style-matcher/)
+- [Service workers & the Cache Storage API](https://web.dev/reliable/service-workers-cache-storage)
+
+## Licence
+MIT © [Arash Paknezad](https://github.com/Arash217)
