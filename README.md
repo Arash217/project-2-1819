@@ -127,9 +127,14 @@ Using a service worker along browser/HTTP cache will give you more control over 
   <img src="https://github.com/Arash217/project-2-1819/blob/master/docs/images/service-worker.png">
 </p>
 
+Note: I used as a proof of concept, the tool sw-precache to generate a service worker which caches the assets of the website.
+However, this tool is deprecated and shouldn't be used in production. 
+Use [Workbox](https://developers.google.com/web/tools/workbox) instead if you want tooling to generate a service worker for production.
+
 ## Sources
 - [Font style matcher](https://meowni.ca/font-style-matcher/)
 - [Service workers & the Cache Storage API](https://web.dev/reliable/service-workers-cache-storage)
+- [Workbox](https://developers.google.com/web/tools/workbox)
 
 ## Licence
 MIT © [Arash Paknezad](https://github.com/Arash217)
